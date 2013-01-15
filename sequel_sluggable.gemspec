@@ -2,7 +2,7 @@
 # -*- encoding: utf-8 -*-
 
 require 'date'
-require 'lib/sequel_sluggable/version'
+require File.expand_path('../lib/sequel_sluggable/version', __FILE__)
 
 Gem::Specification.new do |gem|
   gem.name     = 'sequel_sluggable'
