@@ -2,7 +2,11 @@
 # -*- encoding: utf-8 -*-
 
 require 'date'
-require 'lib/sequel_sluggable/version'
+if RUBY_VERSION < '1.9.0'
+  require 'lib/sequel_sluggable/version'
+else
+  require File.expand_path('../lib/sequel_sluggable/version', __FILE__)
+end
 
 Gem::Specification.new do |gem|
   gem.name     = 'sequel_sluggable'
